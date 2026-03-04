@@ -10,7 +10,7 @@ print ("My age is "+ str(age))
 print("My Id is "+str(id),"\nMy name is "+name,"\nMy age is "+str(age))
 
 """
-print(type (id));
+print(type (id)); 
 print(type(name));
 """
 
