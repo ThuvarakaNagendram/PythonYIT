@@ -1,21 +1,18 @@
-"""data={
-    "name":"Seelan",
-    "age":39,
-    "gender":"male"
-    }
-print(data)
-print(type(data))"""
-
 d=[("name","Seelan"),("age",39),("gender","male"),("native","Puloly")]
 data=dict(d)
 print(data)
 print(type(d))
 print(type(data))
+
+#access dictionary values
 print(data["name"])
+
+#access using get
 print(data.get("age"))
 
 print(data.get("dob","2002/03/12"))#Assign default value
 
+#update values
 data["NIC"]=198742047807
 print(data)
 
@@ -23,7 +20,16 @@ data.update({"age":40,"NIC":1987})
 print(data) 
 
 print("*********************************************")
+print("*********************************************")
+print("*********************************************")
 
+#check key availability
+print("Key availability in dictionary.......................")
+print("name" in data)
+print("city" in data)
+
+#Methods
+print("Methods in dictionary.......................")
 key=data.keys()
 print(key)
 
@@ -35,6 +41,7 @@ print(item)
 
 print("*********************************************")
 
+print("Loop through dictionary.......................")
 for key in data.keys():
     print(key)
     #print(key,data[key])
@@ -51,11 +58,13 @@ for item in data.items():
 
 print("*********************************************")
 
+print("Copy.......................")
 d1=data.copy()
 print(d1)
 
 print("*********************************************")
 
+print("Delete dictionary elements.......................")
 del data["name"]#delete key value
 print("after applied del-name: ",data)
 

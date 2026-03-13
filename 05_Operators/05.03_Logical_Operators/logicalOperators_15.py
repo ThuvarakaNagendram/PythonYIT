@@ -6,6 +6,7 @@ print("x AND y:",x and y)
 print("x OR y:",x or y)
 print("NOT x:",not x)
 print("______________________")
+
 x=10
 y=20
 print("x:",x)
