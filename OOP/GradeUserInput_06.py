@@ -1,4 +1,4 @@
-class GradeUserInput:
+class GradeUserInput_06:
     def __init__(self,id,name):
         self.id=id
         self.name=name
@@ -46,10 +46,12 @@ class GradeUserInput:
 id=int(input("Enter student id: "))
 name=input("Enter student name: ")
 
+#have to do the validation
+
 m1=int(input("Enter mark 1: "))
 m2=int(input("Enter mark 2: "))
 m3=int(input("Enter mark 3: "))
 
-student1=GradeUserInput(id,name)
+student1=GradeUserInput_06(id,name)
 student1.setMarks(m1,m2,m3)
 student1.display()

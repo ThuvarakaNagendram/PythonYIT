@@ -1,0 +1,17 @@
+class A:
+    def __init__(self,x):
+        self.x=x
+    def getX(self):
+        print("Ax: ",self.x)
+        
+class B(A):
+    def __init__(self,x,y):
+        super().__init__(x)
+        self.y=y
+    def getY(self):
+        print("By: ",self.y)
+        
+b=B(10,20)
+b.getX()
+b.getY()
+
